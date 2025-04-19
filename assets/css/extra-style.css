@@ -32,3 +32,29 @@
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 }
+
+/* Отступ в ситуации для 2-х фото */
+.blog-thumb .container .row .col-lg-6 .vertical-img img {
+  margin: 0 -10% 0 10%;
+}
+
+.blog-thumb .vertical-img img {
+  width: 40%;
+  margin-left: 30%;
+}
+
+/* Адаптацтия под мобильные устройства */
+@media (max-width: 768px) {
+  .blog-thumb .container .row .col-lg-6 .vertical-img img {
+    margin: 0 0 5% 10%;
+  }
+
+  .blog-thumb .container .row .col-lg-4 .vertical-img img {
+    margin: 0 0 5% 0;
+  }
+
+  .blog-thumb .vertical-img img {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
