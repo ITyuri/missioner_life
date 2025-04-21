@@ -33,28 +33,50 @@
 	border-bottom: 1px solid #eee;
 }
 
-/* Отступ в ситуации для 2-х фото */
+/* Портфолио из 2-х вертикальных фото */
 .blog-thumb .container .row .col-lg-6 .vertical-img img {
   margin: 0 -10% 0 10%;
 }
 
+/* Портфолио из 3-х вертикальных фото */
+.blog-thumb .container .row .col-lg-4 .vertical-img img {
+  margin: 0 0 0 10%;
+  width: 80%;
+}
+
+/* Одиночное горизонтальное фото */
 .blog-thumb .vertical-img img {
   width: 40%;
   margin-left: 30%;
 }
 
+/* Горизонтальное фото в портфолио из вертикальных фото */
+.blog-thumb .container .row .col-lg-4 .vertical-img .vertical-horizontal-img img {
+  margin: 25% 0 0 10%;
+  width: 80%;
+}
+
 /* Адаптацтия под мобильные устройства */
 @media (max-width: 768px) {
+  /* Портфолио из 2-х вертикальных фото */
   .blog-thumb .container .row .col-lg-6 .vertical-img img {
     margin: 0 0 5% 10%;
   }
 
+  /* Портфолио из 3-х вертикальных фото */
   .blog-thumb .container .row .col-lg-4 .vertical-img img {
-    margin: 0 0 5% 0;
+    margin: 0 0 5% 10%;
   }
 
+  /* Одиночное горизонтальное фото */
   .blog-thumb .vertical-img img {
     width: 70%;
     margin-left: 15%;
+  }
+
+  /* Горизонтальное фото в портфолио из вертикальных фото */
+  .blog-thumb .container .row .col-lg-4 .vertical-img .vertical-horizontal-img img {
+    margin: 0 0 5% 10%;
+    width: 80%;
   }
 }
