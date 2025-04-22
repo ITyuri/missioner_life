@@ -35,7 +35,14 @@
 
 /* Портфолио из 2-х вертикальных фото */
 .blog-thumb .container .row .col-lg-6 .vertical-img img {
-  margin: 0 -10% 0 10%;
+  margin: 0 -10% 0 15%;
+  width: 70%;
+}
+
+/* Портфолио из 2-х вертикальных фото */
+.blog-thumb .container .row .col-lg-6 .horizontal-img img {
+  margin: 0 0 0 10%;
+  width: 80%;
 }
 
 /* Портфолио из 3-х вертикальных фото */
@@ -44,15 +51,33 @@
   width: 80%;
 }
 
-/* Одиночное горизонтальное фото */
-.blog-thumb .vertical-img img {
+/* Портфолио из 3-х горизонтальных фото */
+.blog-thumb .container .row .col-lg-4 .horizontal-img img {
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+/* Одиночное вертикальное фото */
+.blog-thumb > .vertical-img img {
   width: 40%;
   margin-left: 30%;
 }
 
+/* Одиночное горизонтальное фото */
+.blog-thumb > .horizontal-img img {
+  width: 50%;
+  margin-left: 25%;
+}
+
 /* Горизонтальное фото в портфолио из вертикальных фото */
-.blog-thumb .container .row .col-lg-4 .vertical-img .vertical-horizontal-img img {
+.blog-thumb .container .row .col-lg-4 .vertical-horizontal-img img {
   margin: 25% 0 0 10%;
+  width: 80%;
+}
+
+/* Горизонтальное фото в портфолио из вертикальных фото */
+.blog-thumb .container .row .col-lg-6 .vertical-horizontal-img img {
+  margin: 15% 0 0 10%;
   width: 80%;
 }
 
@@ -60,12 +85,25 @@
 @media (max-width: 768px) {
   /* Портфолио из 2-х вертикальных фото */
   .blog-thumb .container .row .col-lg-6 .vertical-img img {
-    margin: 0 0 5% 10%;
+    margin: 0 0 5% 0;
+    width: 100%;
+  }
+
+  /* Портфолио из 2-х горизонтальных фото */
+  .blog-thumb .container .row .col-lg-6 .horizontal-img img {
+    margin: 0 0 5% 0;
+    width: 100%;
   }
 
   /* Портфолио из 3-х вертикальных фото */
   .blog-thumb .container .row .col-lg-4 .vertical-img img {
-    margin: 0 0 5% 10%;
+    margin: 0 0 5% 0;
+    width: 100%;
+  }
+
+  /* Портфолио из 3-х горизонтальных фото */
+  .blog-thumb .container .row .col-lg-4 .horizontal-img img {
+    margin: 0 0 5% 0;
   }
 
   /* Одиночное горизонтальное фото */
@@ -74,9 +112,21 @@
     margin-left: 15%;
   }
 
-  /* Горизонтальное фото в портфолио из вертикальных фото */
-  .blog-thumb .container .row .col-lg-4 .vertical-img .vertical-horizontal-img img {
-    margin: 0 0 5% 10%;
-    width: 80%;
+  /* Одиночное горизонтальное фото */
+  .blog-thumb > .horizontal-img img {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+
+  /* Горизонтальное фото в портфолио из 3-x вертикальных фото */
+  .blog-thumb .container .row .col-lg-4 .vertical-horizontal-img img {
+    margin: 0 0 5% 0;
+    width: 100%
+  }
+
+  /* Горизонтальное фото в портфолио из 2-x вертикальных фото */
+  .blog-thumb .container .row .col-lg-6 .vertical-horizontal-img img {
+    margin: 0 0 5% 0;
+    width: 100%;
   }
 }
